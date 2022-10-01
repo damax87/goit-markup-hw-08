@@ -1,0 +1,65 @@
+ /*HEADER*/
+
+.header {
+    border-bottom: 1px solid var(--cl-border-head);
+ }
+ .main-nav {
+   display: flex;
+   align-items: center;
+ }
+ .site-nav {
+    display: flex;
+    margin-left: 93px;
+  }
+  .site-nav .item + .item {
+    margin-left: 50px;
+  }
+  .contact-nav {
+    display: flex;
+    margin-left: auto;
+  }
+  .contact-nav .item + .item {
+  margin-left: 50px;
+  }
+  .link.current {
+    color: var(--cl-mark);
+    &::after {
+        content: '';
+      
+        position: absolute;
+        left: 0;
+        bottom: 0;  
+      
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: var(--cl-mark);
+        border-radius: 2px;
+      }
+  }
+  
+  .link:hover,
+  .link:focus {
+    color: var(--cl-mark);
+  }
+  .contacts-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--main-cl-grey);
+    fill: var(--main-cl-grey);
+  
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: var(--cl-mark);
+    fill: var(--cl-mark);
+  }
+  }
+  

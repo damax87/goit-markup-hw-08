@@ -1,0 +1,29 @@
+// utils styles
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+// base styles
+@import "./base/reset";
+@import "./base/base";
+
+//components styles
+@import "./components/page-header";
+@import "./components/logo-header";
+@import "./components/hero";
+@import "./components/hero-btn";
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/_register-form";
+@import "./components/register-form-checkbox";
+@import "./components/features";
+@import "./components/examples";
+@import "./components/crew";
+@import "./components/crew-socials";
+@import "./components/clients";
+@import "./components/page-footer";
+@import "./components/logo-footer";
+@import "./components/footer-socials";
+@import "./components/footer-sendbox";
+@import "./components/sendbox-btn";
+@import "./components/portfolio-filter-btn";
+@import "./components/portfolio-projects-cards";

@@ -1,0 +1,16 @@
+/* CHECKBOX РЕГИСТРАЦИИ */
+
+.icon-checked {
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .register-checkbox:checked + .checkbox-icons .icon-checked  {
+    opacity: 1;
+  }
+  .icon-unchecked {
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .register-checkbox:checked + .checkbox-icons .icon-unchecked  {
+    opacity: 0;
+  }

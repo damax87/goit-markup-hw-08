@@ -1,0 +1,53 @@
+/*FOOTER*/
+
+.foot {
+    background-color: var(--cl-hero-foot-bg);
+    padding: 60px 0;
+   }
+  .foot-nav{
+    display: flex;
+  }
+  .foot-adress-box {
+    width: 231px;
+    height: 81px;
+    margin-right: 70px;
+  }
+  .foot-address {
+    margin-bottom: 9px;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    font-style: normal;
+    letter-spacing: 0.03em;
+    color: var(--cl-white);
+  }
+   .foot-email {
+    margin-bottom: 9px;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    font-style: normal;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: var(--cl-mark);
+  }
+    }
+  
+  .foot-tel {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    font-style: normal;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: var(--cl-mark);
+    }
+    }
+ 

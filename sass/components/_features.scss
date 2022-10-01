@@ -1,0 +1,58 @@
+ /* ПРЕИМУЩЕСТВА*/
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .feature-list .item {
+    width: 450px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    width: 270px;
+    
+  }
+  }
+ 
+  .feature-title {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+  .feature-text {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--main-cl-grey);
+  }
+  .box-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--cl-bg-grey);
+    border-radius: 4px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    width: 270px;
+    
+  }
+  }
