@@ -1,6 +1,7 @@
 /*FOOTER*/
 
 .foot {
+   
     background-color: var(--cl-hero-foot-bg);
     padding: 60px 0;
    }
@@ -11,14 +12,20 @@
     width: 231px;
     height: 81px;
     margin-right: 70px;
+   
   }
   .foot-address {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
     font-size: 14px;
     line-height: calc(24 / 14);
     font-style: normal;
     letter-spacing: 0.03em;
     color: var(--cl-white);
+
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
+
   }
    .foot-email {
     margin-bottom: 9px;

@@ -58,6 +58,14 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="menu-mobile-btn js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-menu_mobile"></use>
+          </svg>
+
+        </button>
       </nav>
     </header>
     <main>
@@ -601,6 +609,39 @@
     </div>
     </div>
       </footer>
+      <!--Mobile-menu-->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-close_mobile"></use>
+          </svg>
+        </button>
+  
+        <ul class="mobile-menu list">
+          <li><a href="./index.html" class="mobile-link current">Студія</a></li>
+          <li><a href="./portfolio.html" class="mobile-link">Портфоліо</a></li>
+          <li><a href="" class="mobile-link">Контакти</a></li>
+        </ul>
+        <ul class="list">
+          <li><a href="" class="mobile-link-tel">+38 096 111 11 11</a></li>
+          <li><a href="" class="mobile-link-email">info@devstudio.com</a></li>
+        </ul>
+        <ul class="mobile-socials list">
+          <li><a href="" class="mobile-link-social">Instagram</a></li>
+          <li><a href="" class="mobile-link-social">Twitter</a></li>
+          <li><a href="" class="mobile-link-social">Facebook</a></li>
+          <li><a href="" class="mobile-link-social">LinkedIn</a></li>
+        </ul>
+      </div>
+      <!--Modal script-->
       <script src="./js/modal.js"></script>
+      <!--Mobile menu script-->
+      <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

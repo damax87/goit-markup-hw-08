@@ -1,5 +1,7 @@
  /*HEADER*/
 
+
+ 
 .header {
     border-bottom: 1px solid var(--cl-border-head);
  }
@@ -8,15 +10,28 @@
    align-items: center;
  }
  .site-nav {
-    display: flex;
-    margin-left: 93px;
+    display: none;
+    padding-top: 0;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      margin-left: 93px;
+    }
+
+
+   
   }
   .site-nav .item + .item {
     margin-left: 50px;
   }
   .contact-nav {
-    display: flex;
+    display: none;
     margin-left: auto;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      margin-left: auto;
+    }
   }
   .contact-nav .item + .item {
   margin-left: 50px;
