@@ -1,10 +1,13 @@
 /* SENDBOX BUTTON */
 
 .foot-btn {
+
+
     display: flex;
     align-items: center;
     margin-top: 20px;
-    margin-left: 12px;
+    margin-left: 125px;
+    
     width: 200px;
     height: 50px;
     border-radius: 4px;
@@ -21,6 +24,18 @@
     color: var(--cl-white);
     background-color: var(--cl-mark);
     border: none;
+
+    @media screen and (min-width: 768px) {
+      
+      margin-left: 125px;
+      
+    }
+
+    @media screen and (min-width: 1200px) {
+      
+      margin-left: 12px;
+      
+    }
   }
   
   .send-icon {

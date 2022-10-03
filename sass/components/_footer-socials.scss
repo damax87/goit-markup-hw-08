@@ -1,12 +1,33 @@
 /* FOOTER SOCIALS */
 
 .foot-social {
+  
+   margin-bottom: 60px;
+
+  @media screen and (max-width: 767px) {
+    margin-left: 122px;
+  }
  
+  @media screen and (min-width: 768px)and (max-width: 1199px) {
+    
+    margin-top: -125px;
+   
+    margin-left: 458px;
+    margin-bottom: 102px;
+  }
+
+  @media screen and (min-width: 1200px) {
     margin-top: 12px;
   }
+
+    
+  }
   .socials-foot {
-    display: flex;
-    gap: 10px;
+
+      display: flex;
+      gap: 10px;
+    
+    
   }
   
   .foot-socials-link{
@@ -32,9 +53,12 @@
   
   
   .foot-social-title {
+    padding-left: 45px;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--cl-white);
+
+   
   }
