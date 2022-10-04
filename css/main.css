@@ -1003,6 +1003,7 @@ a {
         -ms-flex-align: center;
             align-items: center;
     margin-left: 61px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1271,7 +1272,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .foot-btn {
-    margin-left: 125px;
+    margin-left: 276px;
   }
 }
 @media screen and (min-width: 1200px) {
