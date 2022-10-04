@@ -96,7 +96,6 @@ a {
 .container {
   /*Mobile 480px*/
   max-width: 480px;
-  height: 60px;
   padding: 10px 15px;
   margin-left: auto;
   margin-right: auto;
@@ -106,7 +105,6 @@ a {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    height: 80px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -961,6 +959,11 @@ a {
   background-color: var(--cl-hero-foot-bg);
   padding: 60px 0;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .foot {
+    position: relative;
+  }
+}
 
 .foot-nav {
   display: block;
@@ -973,43 +976,39 @@ a {
   }
 }
 
-@media screen and (max-width: 767px) {
+.foot-adress-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 232px;
+  height: 79px;
+}
+@media screen and (max-width: 768px) {
   .foot-adress-box {
     margin-bottom: 60px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    margin-left: 109px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .foot-adress-box {
-    width: 232px;
-    height: 79px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin-left: 61px;
-    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .foot-adress-box {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     width: 231px;
     height: 81px;
+    margin-left: 0;
     margin-right: 70px;
   }
 }
@@ -1116,9 +1115,10 @@ a {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .foot-social {
-    margin-top: -125px;
+    position: absolute;
+    top: 75px;
     margin-left: 458px;
-    margin-bottom: 102px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1194,6 +1194,7 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 60px;
   }
 }
 
@@ -1236,10 +1237,8 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .foot-form-title {
-    margin-top: 20px;
     width: 358px;
     height: 50px;
-    padding: 15px 16px;
   }
 }
 
@@ -1269,11 +1268,6 @@ a {
   color: var(--cl-white);
   background-color: var(--cl-mark);
   border: none;
-}
-@media screen and (min-width: 768px) {
-  .foot-btn {
-    margin-left: 276px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .foot-btn {

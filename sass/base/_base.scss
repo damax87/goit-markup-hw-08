@@ -1,53 +1,54 @@
 .section {
    
-/*Mobile 480px*/
-
-padding-top: 60px;
-padding-bottom: 60px;
-
-/*Tablet 768px*/
-
-
-
-/*Desctop 1200px*/
-
-@media screen and (min-width: 1200px) {
+  /*Mobile 480px*/
   
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
+  padding-top: 60px;
+  padding-bottom: 60px;
   
-   
+  /*Tablet 768px*/
+  
+  
+  
+  /*Desctop 1200px*/
+  
+  @media screen and (min-width: 1200px) {
+    
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
-  .container {
-
-    /*Mobile 480px*/
-
-    max-width: 480px;
-    height: 60px;
-    padding: 10px 15px;
-    margin-left: auto;
-    margin-right: auto;
-
-    /*Tablet 768px*/
-
-    @media screen and (min-width: 768px) {
-
-    max-width: 768px;
-    height: 80px;
   
     
-    
+     
     }
-
-    /*Desctop 1200px*/
-
-    @media screen and (min-width: 1200px) {
+    .container {
+  
+      /*Mobile 480px*/
+      
+      
+      max-width: 480px;
+      padding: 10px 15px;
+      margin-left: auto;
+      margin-right: auto;
+  
+      /*Tablet 768px*/
+  
+      @media screen and (min-width: 768px) {
+  
+      max-width: 768px;
       
     
-    max-width: 1200px;
+      
+      
+      }
+  
+      /*Desctop 1200px*/
+  
+      @media screen and (min-width: 1200px) {
+        
+      
+      max-width: 1200px;
+      
+    }
     
   }
-  
-}
+ 

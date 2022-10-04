@@ -4,6 +4,14 @@
    
     background-color: var(--cl-hero-foot-bg);
     padding: 60px 0;
+
+    @media screen and (min-width: 768px)and (max-width: 1199px) {
+    
+      
+      position: relative;
+    
+     
+    }
    }
   .foot-nav{
     display: block;
@@ -14,30 +22,32 @@
   }
   .foot-adress-box {
     
-   
-
-    @media screen and (max-width: 767px) {
-    
+    @media screen and (max-width: 768px) {
       margin-bottom: 60px;
+      margin-left: 109px;
+
+    }  
+      
       display: flex;
       flex-direction: column;
       align-items: center;
-  }
+      width: 232px;
+      height: 79px;
    
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-      width: 232px;
-      height: 79px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      
+    
       margin-left: 61px;
-      margin-bottom: 60px;
+     
     }
 
     @media screen and (min-width: 1200px) {
+      align-items: flex-start;
+
       width: 231px;
       height: 81px;
+      margin-left: 0;
       margin-right: 70px;
     }
    
