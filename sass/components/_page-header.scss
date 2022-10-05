@@ -4,6 +4,16 @@
  
 .header {
     border-bottom: 1px solid var(--cl-border-head);
+
+    @media screen and (min-width: 480px) {
+
+      padding: 10px 15px;
+    }
+
+    @media screen and (min-width: 768px) {
+
+      padding: 0 15px;
+    }
  }
  .main-nav {
    display: flex;

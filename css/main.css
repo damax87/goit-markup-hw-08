@@ -94,13 +94,17 @@ a {
 }
 
 .container {
-  /*Mobile 480px*/
-  max-width: 480px;
-  padding: 10px 15px;
+  padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
+  /*Mobile 480px*/
   /*Tablet 768px*/
   /*Desctop 1200px*/
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -109,6 +113,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .container {
+    padding: 0;
     max-width: 1200px;
   }
 }
@@ -116,6 +121,16 @@ a {
 /*HEADER*/
 .header {
   border-bottom: 1px solid var(--cl-border-head);
+}
+@media screen and (min-width: 480px) {
+  .header {
+    padding: 10px 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 0 15px;
+  }
 }
 
 .main-nav {
@@ -1116,7 +1131,7 @@ a {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .foot-social {
     position: absolute;
-    top: 75px;
+    top: 65px;
     margin-left: 458px;
     margin-bottom: 0;
   }
@@ -1317,6 +1332,11 @@ a {
           justify-content: flex-start;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 767px) {
+  .project-filter {
+    width: 326px;
+  }
+}
 @media screen and (min-width: 768px) {
   .project-filter {
     margin-bottom: 30px;
@@ -1354,6 +1374,9 @@ a {
 @media screen and (min-width: 768px) {
   .project-item {
     width: 354px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1382,6 +1405,17 @@ a {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
+@media screen and (min-width: 768px) {
+  .project-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .project-name {
   color: var(--main-cl);
@@ -1409,6 +1443,9 @@ a {
 }
 @media screen and (min-width: 768px) {
   .project-title-box {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     width: 354px;
   }
 }
@@ -1592,12 +1629,26 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin-top: 32px;
+  gap: 10px;
+}
+
+.social-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mobile-link-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 10px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
   color: var(--cl-mark);
+}
+
+.mobile-link-social:hover,
+.mobile-link-social:focus {
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */
