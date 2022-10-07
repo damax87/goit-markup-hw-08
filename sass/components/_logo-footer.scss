@@ -3,8 +3,12 @@
 .logo-foot {
     margin-bottom: 20px;
 
+      
+
     @media screen and (max-width: 767px) {
-    margin-left: 148px;
+      display: flex;
+      justify-content: center;
+     
   }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {

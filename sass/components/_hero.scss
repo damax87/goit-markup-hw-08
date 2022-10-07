@@ -21,7 +21,13 @@
     background-size: cover;
     background-position: center;
 
-    
+
+    /*Mobile 320px*/
+
+    @media screen and (max-width: 479px) {
+      max-width: 320px;
+     
+      }
 
     /*Tablet 768px*/
 
@@ -57,11 +63,12 @@
     text-transform: uppercase;
     color: var(--cl-white);
     
- /*Tablet 768px*/
+ /*Mobile 320px*/
 
- @media screen and (min-width: 768px) {
-      
-}
+ @media screen and (max-width: 479px) {
+    width: 290px;
+     
+      }
 
  /*Desctop 1200px*/
 

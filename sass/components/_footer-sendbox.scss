@@ -10,9 +10,6 @@
   }
   }
   .foot-sendbox-title {
-    @media screen and (max-width: 767px) {
-    margin-left: 122px;
-  }
 
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -21,16 +18,25 @@
     color: var(--cl-white);
 
     @media screen and (min-width: 768px)and (max-width: 1199px) {
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
+      display: flex;
+      justify-content: center;
+      margin-top: 60px;
+    }
+
+    @media screen and (max-width: 1199px) {
+      display: flex;
+      justify-content: center;
   }
+
+      
 }
   .foot-form {
     display: block;
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      margin-left: 151px;
+    @media screen and (max-width: 1199px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   
     @media screen and (min-width: 1200px) {
@@ -64,6 +70,9 @@
     border: 1px solid var(--cl-mark);
   }
 
+  @media screen and (max-width: 479px) {
+    width: 290px;
+  }
   
 
   @media screen and (min-width: 1200px) {
