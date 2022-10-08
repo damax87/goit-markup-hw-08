@@ -10,16 +10,26 @@
     font-size: 20px;
     letter-spacing: 0.03em;
     text-align: center;
+
+    @media screen and (max-width: 479px) {
+      margin-bottom: 8px;
+    }
   }
 
   .register-form-group {
     padding-bottom: 20px;
+
+    @media screen and (max-width: 479px) {
+      padding-bottom: 10px;
+    }
+
   }
   .name-form {
     position: relative;
     display: block;
     margin-bottom: 10px;
 
+    
   }
   .name-form-title {
     display: block;
@@ -57,6 +67,8 @@
 
     fill: var(--cl-mark);
   }
+
+  
   }
 
 .form-icon {
@@ -95,6 +107,12 @@
   
     border-color: var(--cl-mark);
   }
+
+  @media screen and (max-width: 479px) {
+    height: 40px;
+  }
+
+ 
 }
 
 
@@ -105,8 +123,10 @@
   justify-content: center;
   gap: 7px;
 
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 
+
+  
 }
 
 

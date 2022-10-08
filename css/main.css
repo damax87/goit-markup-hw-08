@@ -101,9 +101,9 @@ a {
   /*Tablet 768px*/
   /*Desctop 1200px*/
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (max-width: 479px) {
   .container {
-    width: 320px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 480px) {
@@ -272,22 +272,56 @@ a {
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: var(--cl-hero-foot-bg);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg-image.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-image.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/header_img_sm-@1x.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header_img_sm-@1x.jpg);
   background-size: cover;
   background-position: center;
   /*Mobile 320px*/
   /*Tablet 768px*/
   /*Desctop 1200px*/
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/header_img_sm-@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header_img_sm-@2x.jpg);
+  }
+}
 @media screen and (max-width: 479px) {
   .hero {
-    max-width: 320px;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 481px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/header_img_md-@1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header_img_md-@1x.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/header_img_md-@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header_img_md-@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/header_img_lg-@1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header_img_lg-@1x.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/header_img_lg-@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header_img_lg-@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -317,7 +351,7 @@ a {
 }
 @media screen and (max-width: 479px) {
   .hero-title {
-    width: 290px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -416,8 +450,9 @@ a {
 }
 @media screen and (max-width: 479px) {
   .modal {
-    width: 290px;
-    height: 450px;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -463,9 +498,19 @@ a {
   letter-spacing: 0.03em;
   text-align: center;
 }
+@media screen and (max-width: 479px) {
+  .register-title {
+    margin-bottom: 8px;
+  }
+}
 
 .register-form-group {
   padding-bottom: 20px;
+}
+@media screen and (max-width: 479px) {
+  .register-form-group {
+    padding-bottom: 10px;
+  }
 }
 
 .name-form {
@@ -574,6 +619,11 @@ a {
 .comment-form:focus {
   border-color: var(--cl-mark);
 }
+@media screen and (max-width: 479px) {
+  .comment-form {
+    height: 40px;
+  }
+}
 
 .register-agriment {
   display: -webkit-box;
@@ -586,7 +636,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 7px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .register-form-desc {
@@ -662,9 +712,9 @@ a {
 .feature-list .item {
   width: 450px;
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (max-width: 479px) {
   .feature-list .item {
-    width: 290px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -716,9 +766,9 @@ a {
   background-color: var(--cl-bg-grey);
   border-radius: 4px;
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (max-width: 479px) {
   .box-icon {
-    width: 290px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -814,9 +864,9 @@ a {
   border-radius: 0px 0px 4px 4px;
   width: 450px;
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (max-width: 479px) {
   .crew__list .crew__item {
-    width: 290px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -854,9 +904,9 @@ a {
   padding-left: auto;
   background-color: var(--cl-white);
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (max-width: 479px) {
   .crew__box {
-    width: 290px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -896,9 +946,9 @@ a {
   padding-left: auto;
   background-color: var(--cl-white);
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (max-width: 479px) {
   .crew__social {
-    width: 290px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -981,9 +1031,9 @@ a {
   width: 210px;
   height: 92px;
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (max-width: 479px) {
   .clients__list .clients__item {
-    width: 130px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1337,7 +1387,7 @@ a {
 }
 @media screen and (max-width: 479px) {
   .foot-form-title {
-    width: 290px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1421,9 +1471,9 @@ a {
           justify-content: flex-start;
   margin-bottom: 40px;
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (max-width: 479px) {
   .project-filter {
-    width: 320px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -1458,9 +1508,9 @@ a {
 .project-item {
   width: 450px;
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (max-width: 479px) {
   .project-item {
-    width: 290px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1533,9 +1583,9 @@ a {
   border-bottom: 1px solid var(--cl-border-projects);
   border-left: 1px solid var(--cl-border-projects);
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (max-width: 479px) {
   .project-title-box {
-    width: 290px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {

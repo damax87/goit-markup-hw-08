@@ -10,8 +10,8 @@
     
     width: 450px;
 
-    @media screen and (min-width: 320px) and (max-width: 479px) {
-      width: 290px;
+    @media screen and (max-width: 479px) {
+      width: 100%;
     }
 
     @media screen and (min-width: 768px) {
@@ -80,8 +80,8 @@
     border-bottom: 1px solid var(--cl-border-projects);
     border-left: 1px solid var(--cl-border-projects);
 
-    @media screen and (min-width: 320px) and (max-width: 479px) {
-      width: 290px;
+    @media screen and (max-width: 479px) {
+      width: 100%;
     }
 
     @media screen and (min-width: 768px) {
