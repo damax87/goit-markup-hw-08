@@ -1,5 +1,7 @@
 /* FOOTER SOCIALS */
 
+
+
 .foot-social {
   
    margin-bottom: 60px;
@@ -8,12 +10,10 @@
  
   @media screen and (min-width: 768px)and (max-width: 1199px) {
     
-    
-    position: absolute;
+    margin-top: 5px;
+  
    
-    top: 65px;
-    margin-left: 458px;
-    margin-bottom: 0;
+    
    
   }
 
@@ -60,18 +60,18 @@
   
   
   .foot-social-title {
-    padding-left: 45px;
+    display: flex;
+    text-align: center;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--cl-white);
 
-    @media screen and (max-width: 767px) {
-      padding: 0;
-      display: flex;
+    @media screen and (max-width: 1199px) {
+        
       justify-content: center;
       
-      
   }
+    
   }

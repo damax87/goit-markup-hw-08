@@ -265,7 +265,6 @@ a {
 /* HERO*/
 .hero {
   /*Mobile 480px*/
-  max-width: 480px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -303,11 +302,6 @@ a {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/header_img_md-@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header_img_md-@2x.jpg);
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    max-width: 768px;
   }
 }
 @media screen and (min-width: 769px) {
@@ -446,13 +440,13 @@ a {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /*Mobile 320px*/
+  /*Tablet 768px*/
   /*Desctop 1200px*/
 }
 @media screen and (max-width: 479px) {
   .modal {
-    padding: 30px;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -498,7 +492,7 @@ a {
   letter-spacing: 0.03em;
   text-align: center;
 }
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 1200px) {
   .register-title {
     margin-bottom: 8px;
   }
@@ -506,11 +500,9 @@ a {
 
 .register-form-group {
   padding-bottom: 20px;
-}
-@media screen and (max-width: 479px) {
-  .register-form-group {
+  /*@media screen and (max-width: 479px) {
     padding-bottom: 10px;
-  }
+  }*/
 }
 
 .name-form {
@@ -533,8 +525,6 @@ a {
 .form-input {
   width: 100%;
   height: 40px;
-  padding-left: 42px;
-  padding-right: 42px;
   cursor: pointer;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -645,16 +635,16 @@ a {
       -ms-user-select: none;
           user-select: none;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--main-cl-grey);
 }
 
 .register-form-link {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -663,7 +653,7 @@ a {
 
 .register-form-btn {
   display: block;
-  margin: 0 auto;
+  margin: 30px auto 0;
   width: 200px;
   height: 50px;
   font-weight: 700;
@@ -1072,6 +1062,25 @@ a {
 }
 
 /*FOOTER*/
+.foot-logo-contacts-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .foot-logo-contacts-social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .foot-logo-contacts-social {
+    gap: 165px;
+  }
+}
+
 .foot {
   background-color: var(--cl-hero-foot-bg);
   padding: 60px 0;
@@ -1233,10 +1242,7 @@ a {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .foot-social {
-    position: absolute;
-    top: 65px;
-    margin-left: 458px;
-    margin-bottom: 0;
+    margin-top: 5px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1283,19 +1289,18 @@ a {
 }
 
 .foot-social-title {
-  padding-left: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--cl-white);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .foot-social-title {
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
